@@ -5,18 +5,19 @@ paginate: 6
 paginate_path: page/:num
 
 blog:
-    name:                                                # 博客名称
-    description:                                         # 博客描述
-    title:                                               # 网页标题
+    name:shxz130                                             
+    description:一个小傻子的奋斗史                                       
+    title:一个小傻子的奋斗史                            
     url:                                                 # 博客地址
     duoshuo:                                             # 多说ID
     tongji:                                              # 百度统计ID
     qiniu:                                               # 七牛云地址
 author:
-    name:                                                # 作者名称
-    email:                                               # 邮箱地址
-    weibo:                                               # 微博地址
-    github:                                              # GitHub地址
+    name:张博                                                
+    email:shxz130@gmail.com                                            
+    weibo:http://weibo.com/u/2924623323
+                                             
+    github:https://github.com/shxz130
     logo:                                                # logo地址
     douban:
         name:                                            # 豆瓣地址名称
