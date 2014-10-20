@@ -18,19 +18,19 @@ redcarpet:
         - autolink
 
 blog:
-    name: Daodaoliang Blog # 博客名称
-    description: 一个努力想成功的loser # 博客描述
-    title: 徐景亮的博客 # 网页标题
-    url: daodaoliang.github.io # 博客地址
-    duoshuo: daodaoliang # 多说ID
-    tongji: daodaoliang # 百度统计ID
+    name: Silly boy Blog # 博客名称
+    description: 一个小傻子的奋斗史 # 博客描述
+    title: 一个小傻子的奋斗史 # 网页标题
+    url: shxz130.github.io # 博客地址
+    duoshuo:  # 多说ID
+    tongji:  # 百度统计ID
     qiniu: # 七牛云地址
 author:
-    name: 徐景亮 # 作者名称
-    email: daodaoliang@yeah.net # 邮箱地址
-    weibo: http://weibo.com/u/5336437516 # 微博地址
-    github: https://github.com/daodaoliang # GitHub地址
-    logo: /res/img/psb.jpg # logo地址
+    name: 张博 # 作者名称
+    email: shxz130@gmail.com # 邮箱地址
+    weibo: http://weibo.com/u/2924623323 # 微博地址
+    github: https://github.com/shxz130 # GitHub地址
+    logo: /res/img/shxz130.jpg # logo地址
     douban:
-        name: http://www.douban.com/people/103498505/    # 豆瓣地址名称
-        key: 07e5af1c9cee1a1a17b10d55d6ca4e4e            # 豆瓣API Key
+        name:    # 豆瓣地址名称
+        key:     # 豆瓣API Key
