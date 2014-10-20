@@ -11,7 +11,7 @@ blog:
     url:shxz130.github.io                                                
     duoshuo:                                             # 多说ID
     tongji:                                              # 百度统计ID
-    qiniu:                                               # 七牛云地址
+    qiniu:  # 七牛云地址
 author:
     name:张博                   
     email:shxz130@gmail.com
