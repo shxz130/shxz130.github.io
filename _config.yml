@@ -5,8 +5,8 @@ paginate: 6
 paginate_path: page/:num
 
 blog:
-    name:shxz130 blog                                              # 博客名称
-    description:一个小傻子的奋斗史                     # 博客描述
+    name:shxz130 blog                                 	 # 博客名称
+    description:一个小傻子的奋斗史                     	 # 博客描述
     title:                                               # 网页标题
     url:                                                 # 博客地址
     duoshuo:                                             # 多说ID
