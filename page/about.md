@@ -1,6 +1,6 @@
 ---
 layout: life
-title: 关于刀刀亮
+title: 关于小傻子
 duoshuo: true
 date: 2014-10-18
 ---
@@ -36,13 +36,11 @@ date: 2014-10-18
 ##<i class="fa fa-circlr-thin"></i>项目经历
 
 * ###<i class="fa fa-dot-circle-o"></i>2014/9—----至今：教务管理系统
->
 * 软件环境：`windows`
-* 硬件环境：`windows + 外设`
+* 硬件环境：`windows`
 * 开发工具：`windows + Eclipse`
 * 项目描述：整套的`教务管理系统`，负责实体层，业务层逻辑层，以及展现层各个模块的书写。
 * 责任描述：项目老师负责，我主要负责各个管理模块的完成，然后提交给老师；
-
 ##获得奖励
 
 | 时间|奖励| 等级|
