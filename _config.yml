@@ -21,7 +21,7 @@ blog:
     name: Silly boy # 博客名称
     description: 一个小傻子的奋斗史 # 博客描述
     title: 一个小傻子的奋斗史 # 网页标题
-    url: shxz130.github.io # 博客地址
+    url: https://shxz130.github.io # 博客地址
     duoshuo: shxz130 # 多说ID
     tongji:  # 百度统计ID
     qiniu: # 七牛云地址
