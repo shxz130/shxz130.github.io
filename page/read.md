@@ -7,5 +7,10 @@ layout: blog
 这里会存放一些我的外部资源共享连接，方便自己索引查看！如果你觉得资源对你有用你也可以直接下载。
 -------------------
 
+<<<<<<< HEAD
 [FreeMarker PDF](/resource/FreeMarker.pdf). 
+=======
+* [FreeMarker PDF](/resource/FreeMarker.pdf) 
+* [深入理解JVM_ClassLoader](/resource/jvm_classloader.pdf)
+>>>>>>> 759ab0f02109b0cfa89b3b6355730227b7f3fa92
   
