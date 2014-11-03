@@ -23,7 +23,7 @@ blog:
     title: 一个小傻子的奋斗史 # 网页标题
     url: https://shxz130.github.io # 博客地址
     duoshuo: shxz130 # 多说ID
-    tongji:  # 百度统计ID
+    tongji:  傻小子130
     qiniu: # 七牛云地址
 author:
     name: 张博 # 作者名称
