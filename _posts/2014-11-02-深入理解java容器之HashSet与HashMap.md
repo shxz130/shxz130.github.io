@@ -16,6 +16,17 @@ map的**keyset()**方法会返回key的集合，map的键不能重复，所以**
 * 取得keyset的值，然后遍历keySet得到对应的value。
 * **entrySet()**方法，获取集合，遍历得到。集合里面实质是Map.Entry(内部类)类型，getKey(),getValue()方法。
 
+{% highlight java %}
+
+public static void main(String[] args)
+{
+	Map hash=new HashMap();
+	hash.put("1", "kewew");
+	hash.put("2", "value");
+	Set set=hash.entrySet();						    Iterator iterator=set.iterator();						while(iterator.hasNext())			
+	{										Map.Entry entry=(Entry) iterator.next();				    System.out.println(entry.getValue());				     }
+}
+{% endhighlight %}
 --------
 ##HashSet的实现
 * 底层是用HashMap实现的。
