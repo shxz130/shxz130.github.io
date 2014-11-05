@@ -15,6 +15,7 @@ title: 文章分类
     {% endunless %}{% endfor %}
   </ul>
 </div>
+
 <hr id="line"/>
 {% for item in (0..site.categories.size) %}{% unless forloop.last %}
 {% capture word %}{{ category[item] | strip_newlines }}{% endcapture %}
@@ -23,4 +24,5 @@ title: 文章分类
 <ul><li class="category-sub">{{ post.date | date: "%Y-%m-%d" }}&nbsp;&nbsp;&raquo;&nbsp;&nbsp;<a class="category-sub-title" href="{{ post.url }}">{{ post.title }}</a></li></ul>
 {% endif %}{% endfor %}
 {% endunless %}{% endfor %}
+
 <br/><br/>
