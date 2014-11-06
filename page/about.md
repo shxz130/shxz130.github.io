@@ -23,7 +23,7 @@ date: 2014-11-6
 * 熟悉Struts/Hibernate/Spring/SpringMVC/Mybatis等开源框架并用于开发。
 * 能用常见的数据库进行开发（mysql,sql server,oracle)。
 * 熟练掌握JSP、Servlet等Java Web编程技术。
-* 熟悉**git**版本控制，了解maven,SVN。
+* 熟悉git版本控制，了解maven,SVN。
 * 熟悉主流web框架jQuery,了解extJs,web Service技术。
 
 ##实践经历
