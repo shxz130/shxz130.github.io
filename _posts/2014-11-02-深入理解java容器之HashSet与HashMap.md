@@ -23,8 +23,13 @@ public static void main(String[] args)
 	Map hash=new HashMap();
 	hash.put("1", "kewew");
 	hash.put("2", "value");
-	Set set=hash.entrySet();						    Iterator iterator=set.iterator();						while(iterator.hasNext())			
-	{										Map.Entry entry=(Entry) iterator.next();				    System.out.println(entry.getValue());				     }
+	Set set=hash.entrySet();						   
+	Iterator iterator=set.iterator();						
+	while(iterator.hasNext())			
+	{										
+		Map.Entry entry=(Entry) iterator.next();				    
+		System.out.println(entry.getValue());				     
+	}
 }
 {% endhighlight %}
 --------
