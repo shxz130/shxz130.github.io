@@ -10,4 +10,5 @@ layout: blog
 
 * [FreeMarker PDF](/resource/FreeMarker.pdf) 
 * [深入理解JVM_ClassLoader](/resource/jvm_classloader.pdf)
+* [JDK1.6帮助文档中文版](/resource/JDK1.6.CHM)
   
