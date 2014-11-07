@@ -31,6 +31,7 @@ date : 2014-11-07
  * getInetAddress(): InetAddress 返回此服务器套接字的本地地址。
  * setSoTimeout(int timeout):void 通过指定超时值启用/禁用 SO_TIMEOUT，以毫秒为单位。 
  * close():void :关闭连接。
+
 --------------
 
 ##java.net.Socket
@@ -170,6 +171,79 @@ public class MainClient
 
 		new ClientInputThread(socket).start();
 		new ClientOutputThread(socket).start();
+	}
+}
+{% endhighlight %}
+
+-----------------
+{% highlight java %}
+public class ClientInputThread extends Thread
+{
+	private Socket socket;
+	
+	public ClientInputThread(Socket socket)
+	{
+		this.socket = socket;
+	}
+	
+	@Override
+	public void run()
+	{
+		try
+		{
+			InputStream is = socket.getInputStream();
+			
+			while(true)
+			{
+				byte[] buffer = new byte[1024];
+				
+				int length = is.read(buffer);
+				
+				String str = new String(buffer, 0, length);
+				
+				System.out.println(str);
+			}
+		}
+		catch (IOException e)
+		{
+			e.printStackTrace();
+		}
+	}
+}
+{% endhighlight %}
+
+-----------------
+{% highlight java %}
+public class ClientOutputThread extends Thread
+{
+	private Socket socket;
+
+	public ClientOutputThread(Socket socket)
+	{
+		this.socket = socket;
+	}
+
+	@Override
+	public void run()
+	{
+		try
+		{
+			OutputStream os = socket.getOutputStream();
+
+			while (true)
+			{
+				BufferedReader reader = new BufferedReader(
+						new InputStreamReader(System.in));
+
+				String line = reader.readLine();
+
+				os.write(line.getBytes());
+			}
+		}
+		catch (IOException e)
+		{
+			e.printStackTrace();
+		}
 	}
 }
 {% endhighlight %}
