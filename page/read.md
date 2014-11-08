@@ -8,7 +8,8 @@ layout: blog
 
 -------------------
 
-* [FreeMarker PDF](/resource/FreeMarker.pdf) 
-* [深入理解JVM_ClassLoader](/resource/jvm_classloader.pdf)
+* [junit帮助文档](/resource/junit3.8.1.chm) 
+* [dom4j帮助文档](/resource/dom4j.chm)
+* [JDOM帮助文档](/resource/jdom.chm)
 * [JDK1.6帮助文档中文版](/resource/JDK1.6.CHM)
-  
+* [FreeMarker](/resource/FreeMarker.pdf) 
