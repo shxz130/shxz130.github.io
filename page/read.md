@@ -8,8 +8,10 @@ layout: blog
 
 -------------------
 
-* [junit帮助文档](/resource/junit3.8.1.chm) 
+* [junit帮助文档](/resource/Junit3.8.1.chm) 
 * [dom4j帮助文档](/resource/dom4j.chm)
+* [dom4j.jar](/resource/dom4j-1.6.1.jar)
 * [JDOM帮助文档](/resource/jdom.chm)
+* [jdom.jar](/resource/jdom.jar)
 * [JDK1.6帮助文档中文版](/resource/JDK1.6.CHM)
 * [FreeMarker](/resource/FreeMarker.pdf) 
