@@ -7,140 +7,178 @@ date : 2014-11-08
 ---
 ------------
 
-##Extensible Markup Language
+##DTD
 
 ------------
 
-* 简称：可标记性语言
-* **作用**：用来标记数据、定义数据类型，是一种允许用户对自己的标记语言进行定义的源语言。 它非常适合万维网传输，提供统一的方法来描述和交换独立于应用程序或供应商的结构化数据。
-* DTD:文档类型定义(Document Type Define)
- * 和XML相伴相生，是用来验证XML，对XML来说相当于字典。
-* XML中的每个元素都是成对出现的(有开始，有结束)
-* XML中的元素嵌套关系要保持正确性，即先开始的标记要先结束，后开始的标记要后结束。
-* 每一个XML文档都有且只有一个根元素（Root Element）。
- * 根元素：唯一一个包含了其他所有元素的元素。
-* XML描述的是文档的内容和结构。不是考虑如何显示。
+* 全称:**Document Type Define**
 
 ---------------
 
-##制定目标
-
---------------
-
-* 可扩展性
-* 语义和表现形式的分离
-* 信息共享。
-* 数据重用。
-
-------------
-
-##XML与HTML的区别 
-
-------------
-
-xml和html都是用于操作数据或数据结构，在结构上大致是相同的，但它们在本质上却存在着明显的区别。综合网上的各种资料总结如下。  
-
------------------
-
-###语法要求不同：  
-
-* 在html中不区分大小写，在xml中严格区分。
- 
-* 在HTML中，有时不严格，如果上下文清楚地显示出段落或者列表键在何处结尾，那么你可以省略或者之类的结束标记。在XML中，是严格的树状结构，绝对不能省略掉结束标记。  
- 
-* 在XML中，拥有单个标记而没有匹配的结束标记的元素必须用一个 / 字符作为结尾。这样分析器就知道不用查找结束标记了。  
- 
-* 在XML中, 属性值必须分装在引号中,在HTML中,引号是可用可不用的。  
- 
-* 在HTML中，可以拥有不带值的属性名。在XML中，所有的属性都必须带有相应的值。 
- 
-* 在XML文档中，空白部分不会被解析器自动删除,但是html是过滤掉空格的。
- 
-###标记不同:
-
-* html使用固有的标记，而xml没有固有的标记。  
-* Html标签是预定义的；XML标签是免费的、自定义的、可扩展的。
-
-###作用不同:
-* html是用来显示数据的；xml是用来描述数据、存放数据的，所以可以作为持久化的介质,Html将数据和显示结合在一起，在页面中把这数据显示出来；而xml则将数据和显示分开。 XML被设计用来描述数据，其焦点是数据的内容。HTML被设计用来显示数据，其焦点是数据的外观。  
- 
-* xml不是HTML的替代品，xml和html是两种不同用途的语言。  
- 
-* XML 不是要替换 HTML；实际上 XML 可以视作对 HTML 的补充。XML 和 HTML 的目标不同：HTML 的设计目标是显示数据并集中于数据外观，而XML的设计目标是描述数据并集中于数据的内容。  
- 
-* 没有任何行为的XML。与 HTML 相似，XML 不进行任何操作。（共同点）  
- 
-###对于XML最好的形容可能是: XML是一种跨平台的，与软、硬件无关的，处理与传输信息的工具。 
-
-###XML未来将会无所不在。XML将成为最普遍的数据处理和数据传输的工具。 
- 
--------------
-------------------
-
-##XML格式
-
--------------
-
-* XML声明：<?xml version="1.0" encoding="utf-8"?> 
- * 两个特性：version,standalone,encoding。
-  * **encoding**默认为utf-8格式。
-  * **standalone**默认为yes。**作用**是判断是否从外部导入文件。
-  * 可以用双引号也可以用单引号。
-  * XML元素可以有属性，属性格式： 属性名="属性值"
-* 文档类型定义
-* 注释 <!-- comment -->
-* 根元素：唯一一个包含了其他所有元素的元素。
-* 属性
-* 子元素。
-
--------------
-
-##实体：就像面向对象中的类
-
------------
-
-* 内置实体
- {% highlight xml %}
-  &lt;    <
-  &gt;    >
-  &amp;   &
-  &quot;  "
-  &apos;  '
-
-{% endhighlight %}
-
-
-* 自定义实体
+###内部声明：
 
  {% highlight xml %}
-<?xml version="1.0"?>
-<!DOCTYPE User[
-
-<!ENTITY username "shxz">
-<!ENTITY userid "130">
+<?xmlversion="1.0"?>
+<!DOCTYPE note[            //定义此文档是 note 类型的文档。
+<!ELEMENT note(to,from,heading,body)>  //定义 note 元素有四个元素："to、from、heading,、body"
+<!ELEMENT to(#PCDATA)>  //定义 to 元素为 "#PCDATA" 类型
+<!ELEMENT from(#PCDATA)>  //定义 from 元素为 "#PCDATA" 类型
+<!ELEMENT heading(#PCDATA)>  //定义 heading 元素为 "#PCDATA" 类型
+<!ELEMENT body(#PCDATA)>  //定义 body 元素为 "#PCDATA" 类型
 ]>
-
-<company>
-	<name>&username;</name>
-	<address>&userid;</address>
-</company>
-
+<note>
+	<to>Tove</to>
+	<from>Jani</from>
+	<heading>Reminder</heading>
+	<body>Don'tforgetmethisweekend</body>
+</note>
 {% endhighlight %}
 
 --------------
 
-##CDATA
+###外部声明
 
 ------------ 
 
-* 全称：character data　
- * 标记CDATA下，所有的标记、实体引用都被忽略，而被XML处理程序一视同仁地当做**字符数据**看待
- * 格式：
+假如 DTD 位于 XML 源文件的外部，那么它应通过下面的语法被封装在一个 DOCTYPE 定义中
+## **<!DOCTYPE 根元素 SYSTEM "文件名">**
 {% highlight xml %}
-<![CDATA[
-	这里存放你要放的数据。
+<?xmlversion="1.0"?>
+<!DOCTYPEnoteSYSTEM"note.dtd"> //引用下面的not.dtd文件。
+<note>
+<to>Tove</to>
+<from>Jani</from>
+<heading>Reminder</heading>
+<body>Don'tforgetmethisweekend!</body>
+</note>
+
+//这是包含DTD的"note.dtd"文件：
+<!ELEMENT note(to,from,heading,body)>
+<!ELEMENT to(#PCDATA)>
+<!ELEMENT from(#PCDATA)>
+<!ELEMENT heading(#PCDATA)>
+<!ELEMENTbody(#PCDATA)>
+{% endhighlight %}
+
+###声明属性
+---------
+<!ATTLIST 元素名称 属性名称 属性类型 默认值>
+
+
+* 类型描述
+ * ID 值为唯一的 id
+ * IDREF 值为另外一个元素的 id
+ * IDREFS 值为其他 id 的列表
+ * NMTOKEN 值为合法的 XML 名称
+ * NMTOKENS 值为合法的 XML 名称的列表
+ * ENTITY 值是一个实体
+ * ENTITIES 值是一个实体列表
+ * NOTATION 此值是符号的名称
+
+* 属性值
+ * #REQUIRED 属性值是必需的
+ * #IMPLIED 属性不是必需的
+ * #FIXED value 属性值是固定的 
+ 
+-----------------
+
+##缺点
+
+-----------------
+
+* DTD有自己的特殊语法，其本身不是XML文档；
+* DTD只提供了有限的数据类型，用户无法自定义类型；
+* DTD不支持域名机制。
+
+-----------------
+
+##Schema
+
+-----------------
+
+* 全称：可扩展标记语言架构
+* 文件扩展名：xsd
+
+-----------------
+
+###优点：
+
+-----------------
+
+XML Schema 比 DTD 更强大。其优势包括以下几点
+* 支持数据类型(更容易的定义数据类型，定义数据约束，更好的数据转换)
+* 它使用 XML 语法
+* 可保护数据通信
+* 可扩展性
+* 可捕获到错误
+
+---------------
+
+###劣点
+
+----------------
+
+* XML Schema语言特别是可能非常冗长,而DTD可以简洁且相对容易编辑。
+* W3C XML Schema没有实现大部分提供的数据元素到文档的DTD能力。
+
+----------------
+ {% highlight xml %}
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"  //命名空间
+	targetNamespace="http://tempuri.org/po.xsd"  
+	xmlns="http://tempuri.org/po.xsd">
 	
-	]]>
+	<xs:element name="purchaseOrder" type="PurchaseOrderType"/> //自定义类型数据
+	<xs:element name="comment" type="xs:string"/>  //定义name为comment，string类型的数据
+	<xs:complexType name="PurchaseOrderType">   //complexType类型的数据
+		<xs:sequence>
+			<xs:element name="shipTo" type="USAddress"/>
+			<xs:element name="billTo" type="USAddress"/>
+			<xs:element ref="comment" minOccurs="0"/>
+			<xs:element name="items" type="Items"/>
+		</xs:sequence>
+		<xs:attribute name="orderDate" type="xs:date"/>
+	</xs:complexType>
+	<xs:complexType name="USAddress">
+		<xs:sequence>
+			<xs:element name="name" type="xs:string"/>
+			<xs:element name="street" type="xs:string"/>
+			<xs:element name="city" type="xs:string"/>
+			<xs:element name="state" type="xs:string"/>
+			<xs:element name="zip" type="xs:decimal"/>
+		</xs:sequence>
+		<xs:attribute name="country" type="xs:NMTOKEN" fixed="US"/>
+	</xs:complexType>
+	<xs:complexType name="Items">
+		<xs:sequence>
+			<xs:element name="item" minOccurs="0" maxOccurs="unbounded">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="productName" type="xs:string"/>
+						<xs:element name="quantity">
+							<xs:simpleType>
+								<xs:restriction base="xs:positiveInteger">
+									<xs:maxExclusive value="100"/>
+								</xs:restriction>
+							</xs:simpleType>
+						</xs:element>
+						<xs:element name="USPrice" type="xs:decimal"/>
+						<xs:element ref="comment" minOccurs="0"/>
+						<xs:element name="shipDate" type="xs:date" minOccurs="0"/>
+					</xs:sequence>
+					<xs:attribute name="partNum" type="SKU" use="required"/>
+				</xs:complexType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+	<!-- Stock Keeping Unit, a code for identifying products -->
+	<xs:simpleType name="SKU">
+		<xs:restriction base="xs:integer">
+			<xs:minInclusive value="2"/>
+			<xs:maxInclusive value="10"/>
+		</xs:restriction>
+	</xs:simpleType>
+</xs:schema>
+
 {% endhighlight %}
 
 
