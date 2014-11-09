@@ -15,3 +15,4 @@ layout: blog
 * [jdom.jar](/resource/jdom.jar)
 * [JDK1.6帮助文档中文版](/resource/JDK1.6.CHM)
 * [FreeMarker](/resource/FreeMarker.pdf) 
+* [W3School.chm](/resource/W3School.chm)
