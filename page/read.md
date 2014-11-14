@@ -20,4 +20,4 @@ layout: blog
 * [FreeMarker](/resource/FreeMarker.pdf) 
 * [W3School.chm](/resource/W3School.chm)
 * [hibernate-release-4.3.7.final.zip](/resource/hibernate-release-4.3.7.Final.zip)
-* [mysql-connector-java.zip](/resource/mysql-connector-java.zip)
+* [mysql-jdbc.jar](/resource/mysql-jdbc.jar)
