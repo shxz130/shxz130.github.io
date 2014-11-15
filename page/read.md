@@ -21,3 +21,5 @@ layout: blog
 * [W3School.chm](/resource/W3School.chm)
 * [hibernate-release-4.3.7.final.zip](/resource/hibernate-release-4.3.7.Final.zip)
 * [mysql-jdbc.jar](/resource/mysql-jdbc.jar)
+* [Mybatis3.pdf(中文版)](/resource/Mybatis3.pdf)
+* [Mybatis3.2.7.zip(jar and documents)](/resource/Mybatis3.zip)
