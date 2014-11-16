@@ -23,3 +23,4 @@ layout: blog
 * [mysql-jdbc.jar](/resource/mysql-jdbc.jar)
 * [Mybatis3.pdf(中文版)](/resource/Mybatis3.pdf)
 * [Mybatis3.2.7.zip(jar and documents)](/resource/Mybatis3.zip)
+* [(UML建模工具)StarUML](/resource/StarUML.zip)
