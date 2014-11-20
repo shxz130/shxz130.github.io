@@ -3,7 +3,7 @@ layout : life
 title : "深入理解Java之线程ReentrantReadWriteLock"
 category : 深入理解Java
 duoshuo: true
-date : 2014-11-19
+date : 2014-11-20
 ---
 
 ##重入读写锁       
@@ -34,6 +34,8 @@ date : 2014-11-19
 * ReadLock可以被多个线程持有并且在作用时排斥任何的WriteLock，而WriteLock则是完全的互斥。这一特性最为重要，因为对于高读取频率而相对较低写入的数据结构，使用此类锁同步机制则可以提高并发量。 
 * 不管是ReadLock还是WriteLock都支持Interrupt，语义与ReentrantLock一致。 
 * WriteLock支持Condition并且与ReentrantLock语义一致，而ReadLock则不能使用Condition，否则抛出UnsupportedOperationException异常。 
+
+------------------
 {% highlight java %}
 package com.thread;
 
@@ -161,3 +163,4 @@ public class CacheDemo {
 }
 {% endhighlight %}
 ------------
+[参考博文](http://www.cnblogs.com/liuling/archive/2013/08/21/2013-8-21-03.html)
