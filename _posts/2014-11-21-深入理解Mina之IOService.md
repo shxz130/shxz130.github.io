@@ -23,6 +23,7 @@ date : 2014-11-21
 * 监听网络连接：一直监听绑定端口是否有新的链接
 * 数据传输： 管理 server端和 client 数据传输
 IoService是IoConnector's 和 IoAcceptor's的父接口，他所定义的方法都是和I/O操作息息相关的
+
 -------------
  
 ![gengsufa](/life/picture/mina3.png)
