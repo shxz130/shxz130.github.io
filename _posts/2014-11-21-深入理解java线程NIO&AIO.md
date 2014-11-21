@@ -1,6 +1,6 @@
 ---
 layout : life
-title : "深入理解Java之线程IO/NIO/AIO"
+title : "深入理解Java之线程NIO/AIO"
 category : 深入理解Java
 duoshuo: true
 date : 2014-11-21
@@ -8,8 +8,6 @@ date : 2014-11-21
 
 -----------
 
-* **面向流与面向缓冲**
- * Java NIO和IO之间第一个最大的区别是，IO是面向流的，NIO是面向缓冲区的。 Java IO面向流意味着每次从流中读一个或多个字节，直至读取所有字节，它们没有被缓存在任何地方。此外，它不能前后移动流中的数据。如果需要前后移动从流中读取的数据，需要先将它缓存到一个缓冲区。 Java NIO的缓冲导向方法略有不同。数据读取到一个它稍后处理的缓冲区，需要时可在缓冲区中前后移动。这就增加了处理过程中的灵活性。但是，还需要检查是否该缓冲区中包含所有您需要处理的数据。而且，需确保当更多的数据读入缓冲区时，不要覆盖缓冲区里尚未处理的数据。
 * 阻塞与非阻塞
  * 阻塞和非阻塞是进程在访问数据的时候，数据内是否准备就绪的一种处理方式,当数据没有准备的时候
  * **阻塞**：往往需要等待缓冲区中的数据准备好过后才处理其他的事情，否则一直等待在那里
@@ -43,7 +41,7 @@ Socket     <----建立连接需要三次握手----->           serversocket
 
 -------------
 
-##NIO原理
+###NIO原理
 
 ------------
 
@@ -51,13 +49,16 @@ Socket     <----建立连接需要三次握手----->           serversocket
  * Connction   
  * accept    
  * 客服端和服务端的读写.(IO事件)
+
 * selctor（选择器）如何进行管理IO事件
  * 当IO事件注册给我们的选择器的时候,选择器会给他们分配一个key（可以简单的理解成一个时间的标签），当IO事件完成过通过key值来找到相应的管道，然后通过管道发送数据和接收数据等操作.
+
 * 数据缓冲区：
  * 通过bytebuffer，提供很多读写的方法put()get()
 * 服务端：ServerSocketChannel  
 * 客户端:  SocketChannel  
-* 选择器:  Selector  selector=Select.open();这样就打开了我们的选择器.	
+* 选择器:  Selector  selector=Select.open();这样就打开了我们的选择器.
+	
 * Selectionkey
  * 获取事件的keys： Selectionkey  keys=  Selector.selectedkeys();
  * 可以通过它来判断IO事件是否已经就绪.
@@ -65,6 +66,7 @@ Socket     <----建立连接需要三次握手----->           serversocket
  * Key.isconnctionable:是否可以连接服务端
  * Key.isreadable():缓冲区是否可读
  * Key.iswriteable():缓冲区是否可写
+ 
 * 注册
  * channel.regist(Selector,Selectionkey.OP_Write);
  * channel.regist(Selector,Selectionkey.OP_Read);
@@ -83,9 +85,6 @@ Socket     <----建立连接需要三次握手----->           serversocket
 
 ------------------
 
-##NIO源码
-
-------------------
 {% highlight java %} 
     package com.shxz.nio2;  
       
@@ -195,9 +194,7 @@ Socket     <----建立连接需要三次握手----->           serversocket
       
     }  
 {% endhighlight %}
-
 ------------
-
 {% highlight java %} 
     package com.shxz.nio2;  
       
