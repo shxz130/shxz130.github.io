@@ -13,6 +13,7 @@ date : 2014-11-21
 * 我们可以在单线程时使用HashMap提高效率，而多线程时用Hashtable来保证安全。
 * ConcurrentHashMap和Hashtable主要区别就是围绕着锁的粒度以及如何锁。
 * ConcurrentHashMap中主要实体类就是三个：**ConcurrentHashMap**（整个Hash表）,**Segment（桶）**，**HashEntry（节点）**，对应上面的图可以看出之间的关系。
+
 ------------------------------
 
 ![onepiece](/life/picture/current.jpg)
