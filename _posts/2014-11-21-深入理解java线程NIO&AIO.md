@@ -77,6 +77,9 @@ Socket     <----建立连接需要三次握手----->           serversocket
 
 ---------------
 
+
+--------------
+
 ###AIO
  
 ----------------
@@ -161,9 +164,7 @@ Socket     <----建立连接需要三次握手----->           serversocket
                     } else if (key.isReadable()) {  
                             read(key);  
                     }  
-      
                 }  
-      
             }  
         }  
         /** 
@@ -305,7 +306,6 @@ import java.util.Iterator;
             client.initClient("localhost",8000);  
             client.listen();  
         }  
-      
     }  
 {% endhighlight %}
 ------------
