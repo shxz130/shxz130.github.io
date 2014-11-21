@@ -38,9 +38,10 @@ date : 2014-11-21
 * 对于网络通信而言NIO，AIO并没有改变网通通信的基本步骤，只是在其原来的基础上(serverscoket,socket)做了一个改进.
 Socket     <----建立连接需要三次握手----->           serversocket 
 * 对于三次握手的方式建立稳定的连接性能开销比较大.解决方案从思想上来说比较容易,就是**减少连接的次数**.对我们的读写通信管道进行一个抽象.                 
+
 -------------
 
-###NIO原理
+##NIO原理
 
 ------------
 
@@ -48,16 +49,13 @@ Socket     <----建立连接需要三次握手----->           serversocket
  * Connction   
  * accept    
  * 客服端和服务端的读写.(IO事件)
-
 * selctor（选择器）如何进行管理IO事件
  * 当IO事件注册给我们的选择器的时候,选择器会给他们分配一个key（可以简单的理解成一个时间的标签），当IO事件完成过通过key值来找到相应的管道，然后通过管道发送数据和接收数据等操作.
-
 * 数据缓冲区：
  * 通过bytebuffer，提供很多读写的方法put()get()
 * 服务端：ServerSocketChannel  
 * 客户端:  SocketChannel  
-* 选择器:  Selector  selector=Select.open();这样就打开了我们的选择器.
-	
+* 选择器:  Selector  selector=Select.open();这样就打开了我们的选择器.	
 * Selectionkey
  * 获取事件的keys： Selectionkey  keys=  Selector.selectedkeys();
  * 可以通过它来判断IO事件是否已经就绪.
@@ -65,7 +63,6 @@ Socket     <----建立连接需要三次握手----->           serversocket
  * Key.isconnctionable:是否可以连接服务端
  * Key.isreadable():缓冲区是否可读
  * Key.iswriteable():缓冲区是否可写
- 
 * 注册
  * channel.regist(Selector,Selectionkey.OP_Write);
  * channel.regist(Selector,Selectionkey.OP_Read);
@@ -84,6 +81,9 @@ Socket     <----建立连接需要三次握手----->           serversocket
 
 ------------------
 
+##NIO源码
+
+------------------
 {% highlight java %} 
     package com.shxz.nio2;  
       
