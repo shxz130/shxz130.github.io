@@ -9,8 +9,19 @@ layout: blog
 
 ###这里的资源有些是从互联网上找到的，个人觉得比较有用就上传上来了，如果有侵权的行为，及时和博主联系。
 
-
 ------------------
+
+###看过的书籍
+
+-----------------------
+
+* 深入理解java虚拟机 [预览](/resource/深入理解Java虚拟机.pdf) [下载](/resource/深入理解Java虚拟机.zip)
+* 漫谈设计模式 从面向对象开始[预览](/resource/漫谈设计模式.pdf) [下载](/resource/漫谈设计模式.zip)
+* FreeMarker [预览](/resource/FreeMarker.pdf) [下载](/resource/FreeMarker.zip)
+* Mybatis3.pdf(中文版) [预览](/resource/Mybatis3.pdf) [下载](/resource/Mybatis中文.zip)
+* 大话设计模式.pdf(中文版) [预览](/resource/大话设计模式.pdf) [下载](/resource/大话设计模式.zip)
+
+------------------------
 
 ###帮助文档
 
@@ -41,17 +52,5 @@ layout: blog
 -------------------------
 
 * [(UML建模工具)StarUML](/resource/StarUML.zip)
-
-
-------------------------
-
-###看过的书籍
-
------------------------
-
-* 深入理解java虚拟机 [预览](/resource/深入理解Java虚拟机.pdf) [下载](/resource/深入理解Java虚拟机.zip)
-* 漫谈设计模式 从面向对象开始[预览](/resource/漫谈设计模式.pdf) [下载](/resource/漫谈设计模式.zip)
-* FreeMarker [预览](/resource/FreeMarker.pdf) [下载](/resource/FreeMarker.zip)
-* Mybatis3.pdf(中文版) [预览](/resource/Mybatis3.pdf) [下载](/resource/Mybatis中文.zip)
 
 -----------------------
