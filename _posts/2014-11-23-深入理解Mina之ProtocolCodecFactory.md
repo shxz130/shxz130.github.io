@@ -12,7 +12,7 @@ date : 2014-11-23
 
 * 自定义编解码工厂：实现**ProtocolCodecFactory**接口
 * 实现自定义编解码器：
- * 实现自动自定义的编码器:实现ProtocolEncoder接口
+ * 实现自动自定义的编码器:实现**ProtocolEncoder**接口
  * 实现自定义解码器:实现**ProtocolDecoder**接口
 * 自定义的编解码器的重要性
  * 因为传输中往往不是通过一个字符串就可以传输所有的信息。
