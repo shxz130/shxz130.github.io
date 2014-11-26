@@ -28,6 +28,8 @@ layout: blog
 --------------
 
 * [深入理解设计模式](https://github.com/shxz130/Design-patterns)
+* [java程序优化并行优化](https://github.com/shxz130/concurrent_optimization)
+* [深入浅出算法](https://github.com/shxz130/Algorithm)
 
 ---------------
 
