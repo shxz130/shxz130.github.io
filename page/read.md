@@ -20,9 +20,10 @@ layout: blog
 * FreeMarker [预览](/resource/FreeMarker.pdf) [下载](/resource/FreeMarker.zip)
 * Mybatis3.pdf(中文版) [预览](/resource/Mybatis3.pdf) [下载](/resource/Mybatis中文.zip)
 * 大话设计模式.pdf(中文版) [预览](/resource/大话设计模式.pdf) [下载](/resource/大话设计模式.zip)
+* Java程序性能优化  让你的Java程序更快、更稳定.pdf [下载 密码：2ihi](http://pan.baidu.com/s/1kTrAN4b)
 
 ------------------------
-
+ 
 ###博文源码
 
 --------------
@@ -62,5 +63,6 @@ layout: blog
 -------------------------
 
 * [(UML建模工具)StarUML](/resource/StarUML.zip)
+* [powerDesigner 密码:sy5f](http://pan.baidu.com/s/1bnkz8wn)
 
 -----------------------
