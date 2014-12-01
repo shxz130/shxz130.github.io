@@ -1,7 +1,7 @@
 ---
 layout : life
 title : "深入理解Java之线程Runnable/Callable/Future/FutureTask"
-category : 深入理解Java
+category : java并行优化
 duoshuo: true
 date : 2014-11-20
 ---

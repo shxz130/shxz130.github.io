@@ -1,7 +1,7 @@
 ---
 layout : life
 title : "深入理解Java容器之ConcurrentHashMap原理分析"
-category : 深入理解Java
+category : java并行优化
 duoshuo: true
 date : 2014-11-21
 ---
