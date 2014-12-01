@@ -18,6 +18,8 @@ date: 2014-11-6
 ##专业技能
 
 * 熟练掌握常用编程语言：Java，熟悉java下网络编程，多线程编程；
+* 对Java面向对象软件结构有一定理解以及较强的应用能力。
+* 熟悉常见的设计模式及应用。
 * 熟悉Struts/Hibernate/Spring/SpringMVC/Mybatis等开源框架并用于开发。
 * 能用常见的数据库进行开发（mysql,sql server,oracle)。
 * 熟练掌握JSP、Servlet等Java Web编程技术。
