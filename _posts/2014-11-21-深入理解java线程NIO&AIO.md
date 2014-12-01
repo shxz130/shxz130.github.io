@@ -1,6 +1,6 @@
 ---
 layout : life
-title : "深入理解Java之线程IO/NIO/AIO"
+title : "深入理解Java之IO/NIO/AIO"
 category : 深入理解Java
 duoshuo: true
 date : 2014-11-21
