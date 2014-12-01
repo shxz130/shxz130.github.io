@@ -18,7 +18,7 @@
 <body>
   <div class="main">
     <div class="title">{{ page.title }}</div>
-    {% if page.meta != false %}<div class="post-info"><i class="fa fa-clock-o"></i>&nbsp;{{ page.date | date: "%Y" }}-{{ page.date | date: "%m" }}-{{ page.date | date: "%d" }}转载请说明出处：http://shxz130.github.io</div>{% endif %}
+    {% if page.meta != false %}<div class="post-info"><i class="fa fa-clock-o"></i>&nbsp;{{ page.date | date: "%Y" }}-{{ page.date | date: "%m" }}-{{ page.date | date: "%d" }}&nbsp;&nbsp;&nbsp;&nbsp;转载请说明出处：http://shxz130.github.io</div>{% endif %}
     <div class="content">
     {{ content }}
     </div>
