@@ -19,7 +19,7 @@ layout: blog
 * 深入理解java虚拟机 [预览](/resource/深入理解Java虚拟机.pdf) [下载](/resource/深入理解Java虚拟机.zip)
 * 漫谈设计模式 从面向对象开始[预览](/resource/漫谈设计模式.pdf) [下载](/resource/漫谈设计模式.zip)
 * 大话设计模式.pdf(中文版) [预览](/resource/大话设计模式.pdf) [下载](/resource/大话设计模式.zip)
-* Java web模式设计之道.pdf [下载 密码：wc9j](http://pan.baidu.com/s/1pJ3EaVp)
+* Java Web 设计模式之道.pdf [下载 密码：wc9j](http://pan.baidu.com/s/1pJ3EaVp)
 * FreeMarker [预览](/resource/FreeMarker.pdf) [下载](/resource/FreeMarker.zip)
 * Mybatis3.pdf(中文版) [预览](/resource/Mybatis3.pdf) [下载](/resource/Mybatis中文.zip)
 
