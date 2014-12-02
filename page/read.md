@@ -56,6 +56,7 @@ layout: blog
 * [Mybatis3.2.7.zip(jar and documents)](/resource/Mybatis3.zip)
 * [jdom.jar](/resource/jdom.jar)
 * [hibernate-release-4.3.7.final.zip](/resource/hibernate-release-4.3.7.Final.zip)
+* [dom4j.jar](/resource/sqljdbc4.jar)
 
 -------------------------
 
