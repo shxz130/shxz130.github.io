@@ -52,6 +52,7 @@ layout: blog
 
 ------------------------
 
+* [HtmlUnit.jar](/resource/HtmlUnit.zip)
 * [dom4j.jar](/resource/dom4j-1.6.1.jar)
 * [mysql-jdbc.jar](/resource/mysql-jdbc.jar)
 * [Mybatis3.2.7.zip(jar and documents)](/resource/Mybatis3.zip)
