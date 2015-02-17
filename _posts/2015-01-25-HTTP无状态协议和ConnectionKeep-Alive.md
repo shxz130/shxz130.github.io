@@ -1,7 +1,7 @@
 ---
 layout : life
 title : "HTTP无状态协议和ConnectionKeep-Alive"
-category : 深入理解java Web
+category : 浅谈http协议
 duoshuo: true
 date : 2015-01-25
 ---
