@@ -51,7 +51,7 @@ layout: blog
 ###jar文件
 
 ------------------------
-
+* [google-gson-2.1-release.zip](/resource/google-gson-2.1-release.zip)
 * [HtmlUnit.jar](/resource/HtmlUnit.zip)
 * [dom4j.jar](/resource/dom4j-1.6.1.jar)
 * [mysql-jdbc.jar](/resource/mysql-jdbc.jar)
