@@ -33,6 +33,7 @@ layout: blog
 * [java程序优化并行优化](https://github.com/shxz130/concurrent_optimization)
 * [深入浅出算法](https://github.com/shxz130/Algorithm)
 * [毕业生信息管理系统 部分代码](https://github.com/shxz130/Web)
+* [为学校社团做的官网](https://github.com/shxz130/lvchuang)
 
 ---------------
 
