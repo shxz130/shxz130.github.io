@@ -52,9 +52,12 @@ layout: blog
 ###jar文件
 
 ------------------------
-* [google-gson-2.1-release.zip](/resource/google-gson-2.1-release.zip)
-* [HtmlUnit.jar](/resource/HtmlUnit.zip)
-* [dom4j.jar](/resource/dom4j-1.6.1.jar)
+
+
+* [poi-bin-3.12-beta1-20150228.zip](/resource/poi-bin-3.12-beta1-20150228.zip) java对office办公软件的支持
+* [google-gson-2.1-release.zip](/resource/google-gson-2.1-release.zip)   java对象与json格式的转换
+* [HtmlUnit.jar](/resource/HtmlUnit.zip)                                 爬虫
+* [dom4j.jar](/resource/dom4j-1.6.1.jar)								 
 * [mysql-jdbc.jar](/resource/mysql-jdbc.jar)
 * [Mybatis3.2.7.zip(jar and documents)](/resource/Mybatis3.zip)
 * [jdom.jar](/resource/jdom.jar)
