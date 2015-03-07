@@ -70,6 +70,8 @@ layout: blog
 
 -------------------------
 
+* [mysql数据库](http://pan.baidu.com/s/1eQeq8nw)
+* [navicat mysql图形化管理工具](http://pan.baidu.com/s/1dDrPNzF)
 * [(UML建模工具)StarUML](/resource/StarUML.zip)
 * [powerDesigner 密码:sy5f](http://pan.baidu.com/s/1bnkz8wn)
 * [httpwatch](/resource/httpwatch9.1.rar)
