@@ -18,6 +18,7 @@ layout: blog
 * [w3cSchool.cc java,jsp,mongoDB,Redis等](http://www.w3cschool.cc/)
 * [守望者](http://watchmen.cn/portal.php)
 * [jquery插件库](http://www.jq22.com/)
+* [柳峰博客 对于微信开发](http://blog.csdn.net/lyq8479/article/details/17406677)
 
 ------------------
 
