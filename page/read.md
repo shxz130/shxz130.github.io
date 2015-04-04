@@ -11,6 +11,16 @@ layout: blog
 
 ------------------
 
+###优秀链接地址
+
+------------------
+
+* [w3cSchool.cc java,jsp,mongoDB,Redis等](http://www.w3cschool.cc/)
+* [守望者](http://watchmen.cn/portal.php)
+* [jquery插件库](http://www.jq22.com/)
+
+------------------
+
 ###看过的书籍
 
 -----------------------
