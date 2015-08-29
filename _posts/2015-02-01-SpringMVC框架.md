@@ -1,7 +1,7 @@
 ---
 layout : life
 title : "深入理解SpringMVC框架"
-category : 深入理解之java Web框架
+category : 深入理解之java Web
 duoshuo: true
 date : 2015-02-01
 ---
