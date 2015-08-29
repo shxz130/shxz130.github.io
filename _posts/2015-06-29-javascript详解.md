@@ -3,7 +3,7 @@ layout : life
 title : "javascipt详解"
 category : 深入学习javascipt
 duoshuo: true
-date : 2015-06-25
+date : 2015-06-29
 ---
 
 -------------
